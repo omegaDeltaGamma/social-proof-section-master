@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social proof section</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@500;700&display=swap');
+
+        body {
+          margin:  0;
+          font-family: 'Spartan', sans-serif;
+          font-size: 15px;
+        }
+
+        .cover  {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          margin-top: 20px;
+          margin-right: 50px;
+          margin-left: 50px;
+          padding: 0 30px;         
+        }
+
+        .part1c {
+          text-align: left;
+          margin: 60px;
+        }
+
+        .title {
+          font-size: 40px;
+          font-weight: 700;
+          color: hsl(300, 43%, 22%);
+          margin: 0;
+        }
+
+        .firstpara {
+          font-weight: 400;
+          color: hsl(303, 10%, 53%);
+        }
+
+        .part2c {
+          margin: 60px;
+        }
+
+        .star {
+          margin: 3px;
+        }
+
+        .rat {
+          width: 400px;
+          height: 30px;
+          background: hsl(300, 24%, 96%);
+          margin: 20px;
+          padding: 10px 30px ;
+          border-radius: 5px;
+          display: grid;
+          grid-template-columns: 10px  1fr;
+        }
+
+        .second {
+          margin-left: 50px;
+        }
+
+        .third {
+          margin-left: 80px;
+        }
+
+        span {
+          font-weight: 700;
+          color:  hsl(300, 43%, 22%);
+          margin: 20px;
+        }
+
+        .comments {
+          margin: 0 130px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .comment {
+          height: 120px;
+          width: 270px;
+          background: hsl(300, 43%, 22%);
+          border-radius: 8px;
+          margin: 0 10px;
+          padding:  30px;
+          padding-bottom: 50px;
+        }
+
+        .picture {
+          width: 35px;
+          height: 35px;
+          border-radius: 50%;
+        }
+
+        .name {
+          color: hsl(0, 0%, 100%);
+          font-size: 13px;
+          position: relative;
+          bottom: 20px;
+        }
+
+        .type {
+          color: hsl(333, 80%, 67%);
+          font-size: 13px;
+          font-weight: 400;
+          position: relative;
+          left: 37px;
+          bottom: 18px;
+        }
+
+        .compara {
+          color: hsl(0, 0%, 100%);
+          font-size: 12px;
+          font-weight: 400;
+          margin: 0 auto;
+          line-height: 20px;
+        }
+
+        .secondary {
+          position: relative;
+          top: 12px;
+        }
+
+        .tertiary {
+          position: relative;
+          top: 23px;
+        }
+
+        @media screen and (max-width: 375px){
+          .cover {
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin: 0;
+          }
+         
+          .comments {
+            grid-template-columns: 1fr;
+            margin: 0;
+            margin-left: 20px;
+          }
+
+          .comment {
+            width: 320px;
+          }
+          
+
+          .rat {
+            height: 80px;
+            display: grid;
+            grid-template-columns: 1fr;
+            width: 340px;
+          }
+
+          .part2c {
+            margin: 0;
+          }
+          
+
+          .second, .third, .first {
+            margin-left: 0;
+          }
+        
+          .part1c {
+            height: 100px;
+          }
+
+          .title {
+            font-size: 30px;
+            text-align: center;
+            margin-right: 10px;
+          }
+
+        }
+
+        /*.back1part1 {
+          width: 600px;
+          height: 200px;
+          background: hsl(300, 24%, 96%);
+          border-radius: 0 0 600px 0;
+          position: absolute;
+        }
+      
+        .back1part2 {
+          width: 400px;
+          height: 200px;
+          background: hsl(300, 24%, 96%);
+          border-radius: 0 0 500px 0;
+          position: absolute;
+          top: 200px;
+        }*/
+      
+    </style>
+  </head>
+  <body>
+    <div class="cover">
+      <div class="part1c">
+        <strong><h1 class="title">10,000+ of our users love our products.</h1></strong>
+        <p class="firstpara">We only provide great products combined with excellent customer service.
+          See what our satisfied customers are saying about our services.
+        </p>
+      </div>
+      <div class="part2c">
+        <div class="rat first">
+          <div class="stars">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+          </div>
+          <span>Rated 5 Stars in Reviews</span>
+        </div>
+        <div class="rat second">
+          <div class="stars">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            </div>
+          <span>Rated 5 Stars in Report Guru</span>
+        </div>
+        <div class="rat third">
+          <div class="stars">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+            <img class="star" src="./images/icon-star.svg">
+          </div>
+          <span>Rated 5 Stars in BestTech</span>
+        </div>
+      </div>
+    </div>
+    <div class="comments">
+      <div class="comment primary">
+        <img class="picture" src="/Users/anas_/Desktop/Front end master 1st challenge/social-proof-section-master/images/image-colton.jpg">
+        <span class="name">Colton Smith</span><br>
+        <span class="type">Verified Buyer</span>
+        <p class="compara"> "We needed the same printed design as the one we had ordered a week prior.
+          Not only did they find the original order, but we also received it in time.
+          Excellent!"</p>
+      </div>
+      <div class="comment secondary">
+        <img class="picture" src="/Users/anas_/Desktop/Front end master 1st challenge/social-proof-section-master/images/image-irene.jpg">
+        <span class="name">Irene Roberts </span><br>
+        <span class="type">Verified Buyer</span>
+        <p class="compara">"Customer service is always excellent and very quick turn around. Completely
+          delighted with the simplicity of the purchase and the speed of delivery."</p>
+      </div>
+      <div class="comment tertiary">
+        <img class="picture" src="/Users/anas_/Desktop/Front end master 1st challenge/social-proof-section-master/images/image-anne.jpg">
+        <span class="name">Anne Wallace </span><br>
+        <span class="type">Verified Buyer</span>
+        <p class="compara">"Put an order with this company and can only praise them for the very high
+          standard. Will definitely use them again and recommend them to everyone!"-->
+      </p>
+      </div>
+    </div>
+    
+   
+
+    
+    
+    
+    
+   
+    
+    <!----Irene Roberts 
+    Verified Buyer
+    "Customer service is always excellent and very quick turn around. Completely
+    delighted with the simplicity of the purchase and the speed of delivery."
+    
+    Anne Wallace 
+    Verified Buyer
+    "Put an order with this company and can only praise them for the very high
+    standard. Will definitely use them again and recommend them to everyone!"-->
+
+    <!--<div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>-->
+  </body>
+</html>
